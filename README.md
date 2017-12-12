@@ -67,7 +67,7 @@ The plugin automatically integrates with the [redux devtools Chrome extension](h
 
 ---
 
-### `store.ctx` - Enhancers has access to `ctx`
+### `store.ctx` - Enhancers have access to `ctx`
 
 For convenience, Redux stores are composed with a default right-most enhancer to add `store.ctx` along side with other [Store APIs](https://github.com/reactjs/redux/blob/master/docs/api/Store.md).
 This is particular useful for your custom store enhancers to access to `ctx` for use-cases such as logging, analytics...etc.
