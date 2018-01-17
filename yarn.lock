@@ -416,7 +416,7 @@
   dependencies:
     "@babel/helper-builder-binary-assignment-operator-visitor" "7.0.0-beta.31"
 
-"@babel/plugin-transform-flow-strip-types@7.0.0-beta.37", "@babel/plugin-transform-flow-strip-types@^7.0.0-beta.36":
+"@babel/plugin-transform-flow-strip-types@^7.0.0-beta.36":
   version "7.0.0-beta.37"
   resolved "https://registry.yarnpkg.com/@babel/plugin-transform-flow-strip-types/-/plugin-transform-flow-strip-types-7.0.0-beta.37.tgz#749b005300334fa474e18b82b22b869fdfe68fed"
   dependencies:

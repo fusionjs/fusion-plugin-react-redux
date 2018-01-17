@@ -27,7 +27,6 @@
     "./dist/browser.es2015.es.js": "./dist/browser.es2017.es.js"
   },
   "devDependencies": {
-    "@babel/plugin-transform-flow-strip-types": "7.0.0-beta.37",
     "@babel/preset-react": "7.0.0-beta.37",
     "@types/redux": "3.6.31",
     "babel-eslint": "8.2.1",
