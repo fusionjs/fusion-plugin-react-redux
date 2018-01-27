@@ -15,7 +15,7 @@ import {unescape} from 'fusion-core';
 import ctxEnhancer from './ctx-enhancer';
 import {ReducerToken, PreloadedStateToken, EnhancerToken} from './tokens.js';
 
-export default createPlugin({
+export default __BROWSER__ && createPlugin({
   deps: {
     reducer: ReducerToken,
     preloadedState: PreloadedStateToken,

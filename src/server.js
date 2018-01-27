@@ -17,7 +17,7 @@ import {
   InitialStateToken,
 } from './tokens.js';
 
-export default createPlugin({
+export default __NODE__ && createPlugin({
   deps: {
     reducer: ReducerToken,
     preloadedState: PreloadedStateToken,
