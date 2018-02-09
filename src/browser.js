@@ -25,8 +25,6 @@ export default () => {
     provides({reducer, preloadedState, enhancer}) {
       class Redux {
         constructor(ctx) {
-          // eslint-disable-next-line
-          debugger;
           if (storeCache) {
             this.store = storeCache;
           } else {
