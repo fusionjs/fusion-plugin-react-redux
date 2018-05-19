@@ -13,7 +13,7 @@ import type {Token, Context} from 'fusion-core';
 
 import type {ReactReduxServiceType} from './types.js';
 
-type InitialStateType = (ctx?: Context) => Promise<*> | *;
+type InitialStateType<TState> = (ctx?: Context) => Promise<TState> | TState;
 
 export const ReduxToken: Token<ReactReduxServiceType> = createToken(
   'ReduxToken'
@@ -25,6 +25,6 @@ export const PreloadedStateToken: Token<Object> = createToken(
 export const EnhancerToken: Token<StoreEnhancer<*, *, *>> = createToken(
   'EnhancerToken'
 );
-export const GetInitialStateToken: Token<InitialStateType> = createToken(
+export const GetInitialStateToken: Token<InitialStateType<mixed>> = createToken(
   'GetInitialStateToken'
 );
