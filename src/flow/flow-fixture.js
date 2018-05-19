@@ -14,3 +14,10 @@ const app = new App();
 app.register(GetInitialStateToken, async () => {
   return {};
 });
+
+// Failing case for when we can test flow failures
+/*
+app.register(GetInitialStateToken, async () => {
+  return 0;
+});
+*/
