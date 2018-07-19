@@ -6,7 +6,7 @@
  * @flow
  */
 
-import App from 'fusion-core';
+import App, {createPlugin} from 'fusion-core';
 import {GetInitialStateToken} from '../tokens.js';
 
 import type {Context} from 'fusion-core';
@@ -29,6 +29,19 @@ app.register(GetInitialStateToken, (ctx: Context) => {
     something: ctx.state.something,
   };
 });
+
+app.register(
+  GetInitialStateToken,
+  createPlugin({
+    provides: () => {
+      return async function getInitialState(ctx: Context) {
+        return {
+          something: ctx.state.something,
+        };
+      };
+    },
+  })
+);
 
 // Failing case for when we can test flow failures
 /*
